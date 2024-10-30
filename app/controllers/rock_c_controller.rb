@@ -1,4 +1,4 @@
-class rock_c < ApplicatonController
+class RockController < ApplicationController
   def play 
     @options = ["rock", "paper", "scissors"]
     @robot = @options.sample
