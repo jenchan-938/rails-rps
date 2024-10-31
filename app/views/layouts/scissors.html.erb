@@ -6,6 +6,20 @@
   </head>
 
   <body>
+   <style>
+      .navbar{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+      }
+
+    </style>
+
+  <div class ="navbar">
+  <div><a href = "/rock"> Play Rock </a></div>
+  <div><a href ="/scissors"> Play Scissors </a> </div>
+  <div><a href ="/paper"> Play Paper </a> </div>
+  </div>
     <h1> We played scissors! </h1>
     <h1> <%=@robot_play%> </h1>
     <h1> <%=@result%> </h1>
