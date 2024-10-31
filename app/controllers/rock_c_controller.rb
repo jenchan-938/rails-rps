@@ -1,4 +1,4 @@
-class RockController < ApplicationController
+class RockCController < ApplicationController
   def play 
     @options = ["rock", "paper", "scissors"]
     @robot = @options.sample
@@ -13,8 +13,8 @@ class RockController < ApplicationController
     elsif @robot =="scissors"
         @result = "We won!"
     end
- return @result
- render ({ :template => "/rock.html.erb"})
+ render({ :template => "layouts/rock"})
+
 end
   
 end
